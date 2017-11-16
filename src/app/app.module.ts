@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from '../pages/form/form.component';
 import { HomeComponent } from '../pages/home/home.component';
-import { MatInputModule } from '@angular/material';
+import { MatInputModule, MatOptionModule, MatSelectModule, MatGridListModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     MatInputModule,
+    MatOptionModule, MatSelectModule, MatGridListModule,
     BrowserAnimationsModule
   ],
   providers: [],
