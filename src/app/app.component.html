@@ -1,3 +1,4 @@
+
   <mat-toolbar color="primary">
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
@@ -12,7 +13,7 @@
     </mat-menu>
   </mat-toolbar>
 
-  <mat-sidenav-container >
+  <mat-sidenav-container>
 
     <mat-sidenav #snav mode="slide" closed>
       <mat-nav-list>
@@ -36,6 +37,8 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <router-outlet></router-outlet>
+      <div class="main-container">
+        <router-outlet></router-outlet>
+      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
