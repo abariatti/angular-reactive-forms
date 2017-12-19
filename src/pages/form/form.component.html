@@ -1,35 +1,12 @@
-<p>
-  form component works!
-</p>
-
-<form class="example-form">
-
-  <mat-grid-list cols="2" rowHeight="2:1">
-    <mat-grid-tile>
-      <mat-form-field>
-        <mat-select placeholder="Select">
-          <mat-option value=""></mat-option>
-          <mat-option value="option">Option1</mat-option>
-          <mat-option value="option">Option2</mat-option>
-          <mat-option value="option">Option3</mat-option>
-          <mat-option value="option">Option4</mat-option>
-          <mat-option value="option">Option5</mat-option>
-          <mat-option value="option">Option6</mat-option>
-          <mat-option value="option">Option7</mat-option>
-        </mat-select>
+<mat-card>
+  <mat-toolbar color="primary">Form</mat-toolbar>
+  <mat-card-content>
+    <form>
+      <mat-form-field hintLabel="Max 10 characters">
+          <input matInput #input maxlength="10" placeholder="Enter some input">
+          <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
       </mat-form-field>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-form-field class="example-full-width">
-        <input matInput placeholder="Favorite food" value="Sushi">
-      </mat-form-field>
-    </mat-grid-tile>
-  </mat-grid-list>
-  <mat-grid-list cols="1" rowHeight="1:1">
-    <mat-grid-tile>1</mat-grid-tile>
-    <mat-grid-tile>2</mat-grid-tile>
-  </mat-grid-list>
+    </form>
+  </mat-card-content>
 
-
-
-</form>
+</mat-card>
