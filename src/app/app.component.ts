@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'Angular Material Reactive Forms Starter';
   selectedUser = {
     name: 'Arnaud',
-    details: 'fgsdafsad',
+    details: 'Details for ...',
     admin: true,
     cool: false
   };
