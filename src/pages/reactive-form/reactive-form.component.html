@@ -1,0 +1,35 @@
+<mat-card>
+  <mat-card-title color="primary">Reactive Form</mat-card-title>
+  <mat-card-content>
+
+    <form novalidate (ngSubmit)="onSubmit(user)" [formGroup]="user">
+
+      <div fxLayout="column">
+
+        <mat-form-field>
+          <input matInput type="text" formControlName="name" placeholder="Your full name">
+          <mat-error *ngIf="user.get('name').hasError('required')">Name is required</mat-error>
+          <mat-error *ngIf="user.get('name').hasError('minlength')">Minimum 2 characters</mat-error>
+        </mat-form-field>
+
+        <div formGroupName="account" fxLayout="column">
+
+          <mat-form-field>
+            <input matInput type="email" formControlName="email" placeholder="Your email address">
+            <mat-error *ngIf="user.get('account').get('email').hasError('required')">Email is required</mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput type="email" formControlName="confirm" placeholder="Confirm your email address">
+            <mat-error *ngIf="user.get('account').get('confirm').hasError('required')">Confirming email is required</mat-error>
+          </mat-form-field>
+
+        </div>
+
+        <button [disabled]="user.invalid" mat-raised-button type="submit">Sign up</button>
+
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>

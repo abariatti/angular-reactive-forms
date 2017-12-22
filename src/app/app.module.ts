@@ -21,12 +21,14 @@ import { MatButtonModule,
 import { AppComponent } from './app.component';
 import { FormComponent } from '../pages/form/form.component';
 import { HomeComponent } from '../pages/home/home.component';
+import { ReactiveFormComponent } from '../pages/reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    HomeComponent
+    HomeComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,

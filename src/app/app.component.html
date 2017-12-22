@@ -15,16 +15,26 @@
 <mat-sidenav-container fxLayout="row" fxFlex>
 
   <mat-sidenav #snav mode="push" closed>
+
     <mat-nav-list>
+
       <mat-list-item routerLink="/home">
         <mat-icon>home</mat-icon>
         <span>Home </span>
       </mat-list-item>
+
       <mat-list-item routerLink="/form">
         <mat-icon>poll</mat-icon>
         <span>Simple Form </span>
       </mat-list-item>
+
+      <mat-list-item routerLink="/reactive-form">
+        <mat-icon>poll</mat-icon>
+        <span>Reactive Form </span>
+      </mat-list-item>
+
     </mat-nav-list>
+
   </mat-sidenav>
 
   <mat-sidenav-content>
