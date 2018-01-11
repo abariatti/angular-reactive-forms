@@ -19,16 +19,26 @@ import { MatButtonModule,
          MatToolbarModule,
          MatGridListModule } from '@angular/material';
 import { AppComponent } from './app.component';
-import { FormComponent } from '../pages/form/form.component';
-import { HomeComponent } from '../pages/home/home.component';
-import { ReactiveFormComponent } from '../pages/reactive-form/reactive-form.component';
+import { FormComponent } from './pages/form/form.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ReactiveFormComponent } from './pages/reactive-form/reactive-form.component';
+import { DynamicFormExampleComponent } from './pages/dynamic-form-example/dynamic-form-example.component';
+import { DynamicFormComponent } from './pages/dynamic-form-example/dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './pages/dynamic-form-example/dynamic-form/dynamic-form-question/dynamic-form-question.component';
+import { MatDynamicFormComponent } from './pages/dynamic-form-example/mat-dynamic-form/mat-dynamic-form.component';
+import { MatDynamicFormQuestionComponent } from './pages/dynamic-form-example/mat-dynamic-form/mat-dynamic-form-question/mat-dynamic-form-question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     HomeComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    DynamicFormExampleComponent, 
+    DynamicFormComponent,
+    DynamicFormQuestionComponent,
+    MatDynamicFormComponent,
+    MatDynamicFormQuestionComponent
   ],
   imports: [
     BrowserModule,

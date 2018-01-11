@@ -1,0 +1,11 @@
+<div [ngSwitch]="question.controlType">
+  <mat-form-field floatLabel="auto" 
+                  *ngSwitchCase="'textbox'" >
+                  
+    <input matInput 
+           [placeholder]="question.label" 
+           [id]="question.key"   
+           required>
+
+  </mat-form-field>
+</div>
