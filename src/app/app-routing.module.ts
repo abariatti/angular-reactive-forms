@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'form-example', component: FormExampleComponent },
-  { path: 'reactive-form', component: ReactiveFormExampleComponent },
+  { path: 'reactive-form-example', component: ReactiveFormExampleComponent },
   { path: 'dynamic-form-example', component: DynamicFormExampleComponent }
 ];
 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
-import { User } from './signup.interface';
 
 @Component({
   selector: 'app-reactive-form',

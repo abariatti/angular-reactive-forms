@@ -18,6 +18,7 @@ import { MatButtonModule,
          MatTabsModule,
          MatToolbarModule,
          MatGridListModule } from '@angular/material';
+import { ThemePickerModule } from './theme-picker';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FormExampleComponent } from './pages/form-example/form-example.component';
@@ -62,9 +63,10 @@ import { MatDynamicFormQuestionComponent } from './pages/dynamic-form-example/ma
     MatToolbarModule,
     MatGridListModule,
     FlexLayoutModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ThemePickerModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

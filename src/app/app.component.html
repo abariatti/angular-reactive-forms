@@ -7,9 +7,13 @@
   <button mat-icon-button [matMenuTriggerFor]="themeMenu">
     <mat-icon>more_vert</mat-icon>
   </button>
-  <mat-menu #themeMenu x-position="before">
-    <button mat-menu-item>Toggle Theme</button>
+
+  <theme-picker (setStyle)="onSetStyle($event)"></theme-picker>
+  
+  <mat-menu #themeMenu x-position="after">
+    <button mat-menu-item>Profile</button>
   </mat-menu>
+
 </mat-toolbar>
 
 <mat-sidenav-container fxLayout="row" fxFlex>

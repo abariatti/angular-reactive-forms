@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ThemePickerModule } from './theme-picker';
+import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular Material Reactive Forms Starter';
+  title = 'Angular Material Forms Starter';
   selectedUser = {
     name: 'Arnaud',
     details: 'Details for ...',
@@ -15,4 +17,16 @@ export class AppComponent {
     cool: false
   };
 
+  constructor(
+    private _element: ElementRef,
+    private _overlayContainer: OverlayContainer
+  ) {}
+  
+  onSetStyle(event){
+    console.log('onSetStyle');
+    this._element.nativeElement.className = "";
+    this._overlayContainer.getContainerElement().className = "";
+    this._element.nativeElement.classList.add(event);
+    this._overlayContainer.getContainerElement().classList.add(event);
+  }
 }
