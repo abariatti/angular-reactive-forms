@@ -21,6 +21,6 @@ export class FormExampleComponent {
   }
 
   onSubmit() {
-    console.log(this.user);
+    alert(JSON.stringify(this.user));
   }
 }

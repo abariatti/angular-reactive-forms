@@ -11,10 +11,10 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 export class AppComponent {
   title = 'Angular Material Forms Starter';
   selectedUser = {
-    name: 'Arnaud',
+    name: 'John Doe',
     details: 'Details for ...',
-    admin: true,
-    cool: false
+    admin: false,
+    cool: true
   };
 
   constructor(
