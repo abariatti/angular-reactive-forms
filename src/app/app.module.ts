@@ -4,21 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, 
-         MatCardModule,
-         MatCheckboxModule,
-         MatDialogModule,
-         MatIconModule,
-         MatInputModule,
-         MatListModule,
-         MatMenuModule,
-         MatSelectModule,
-         MatSidenavModule,
-         MatSlideToggleModule,
-         MatTabsModule,
-         MatToolbarModule,
-         MatGridListModule } from '@angular/material';
-import { ThemePickerModule } from './theme-picker';
+import { AppMaterialModule } from './shared/app-material/app-material.module';
+import { ThemePickerModule } from './shared/theme-picker';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FormExampleComponent } from './pages/form-example/form-example.component';
@@ -50,20 +37,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    MatButtonModule,
-    MatCardModule,
-    MatCheckboxModule,
-    MatDialogModule,
-    MatIconModule,
-    MatInputModule,
-    MatListModule,
-    MatMenuModule,
-    MatSelectModule,
-    MatSidenavModule,
-    MatSlideToggleModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatGridListModule,
+    AppMaterialModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
     ThemePickerModule

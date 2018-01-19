@@ -1,6 +1,6 @@
 import { Component, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ThemePickerModule } from './theme-picker';
+import { ThemePickerModule } from './shared/theme-picker';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
