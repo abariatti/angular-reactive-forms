@@ -10,12 +10,6 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 })
 export class AppComponent {
   title = 'Angular Material Forms Starter';
-  selectedUser = {
-    name: 'John Doe',
-    details: 'Details for ...',
-    admin: false,
-    cool: true
-  };
 
   constructor(
     private _element: ElementRef,
@@ -23,7 +17,6 @@ export class AppComponent {
   ) {}
   
   onSetStyle(event){
-    console.log('onSetStyle');
     this._element.nativeElement.className = "";
     this._overlayContainer.getContainerElement().className = "";
     this._element.nativeElement.classList.add(event);

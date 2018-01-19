@@ -1,17 +1,21 @@
 <mat-toolbar color="primary">
+  
   <button mat-icon-button (click)="snav.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
+  
   <span>{{title}}</span>
+  
   <span fxFlex></span>
-  <button mat-icon-button [matMenuTriggerFor]="themeMenu">
-    <mat-icon>more_vert</mat-icon>
-  </button>
 
   <theme-picker (setStyle)="onSetStyle($event)"></theme-picker>
   
+  <button mat-icon-button [matMenuTriggerFor]="themeMenu">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+
   <mat-menu #themeMenu x-position="after">
-    <button mat-menu-item>Profile</button>
+    <button routerLink="/profile" mat-menu-item>Profile</button>
   </mat-menu>
 
 </mat-toolbar>

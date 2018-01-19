@@ -28,6 +28,7 @@ import { DynamicFormComponent } from './pages/dynamic-form-example/dynamic-form/
 import { DynamicFormQuestionComponent } from './pages/dynamic-form-example/dynamic-form/dynamic-form-question/dynamic-form-question.component';
 import { MatDynamicFormComponent } from './pages/dynamic-form-example/mat-dynamic-form/mat-dynamic-form.component';
 import { MatDynamicFormQuestionComponent } from './pages/dynamic-form-example/mat-dynamic-form/mat-dynamic-form-question/mat-dynamic-form-question.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { MatDynamicFormQuestionComponent } from './pages/dynamic-form-example/ma
     DynamicFormQuestionComponent,
     MatDynamicFormComponent,
     MatDynamicFormQuestionComponent,
+    ProfileComponent,
     
   ],
   imports: [
